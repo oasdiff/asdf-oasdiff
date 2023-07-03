@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-# TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for oasdiff.
-GH_REPO="https://github.com/tufin/oasdiff"
+]GH_REPO="https://github.com/tufin/oasdiff"
 TOOL_NAME="oasdiff"
 TOOL_TEST="oasdiff --help"
 

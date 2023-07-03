@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-oasdiff [![Build](https://github.com/reuvenharrison/asdf-oasdiff/actions/workflows/build.yml/badge.svg)](https://github.com/reuvenharrison/asdf-oasdiff/actions/workflows/build.yml) [![Lint](https://github.com/reuvenharrison/asdf-oasdiff/actions/workflows/lint.yml/badge.svg)](https://github.com/reuvenharrison/asdf-oasdiff/actions/workflows/lint.yml)
+# asdf-oasdiff [![Build](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/build.yml/badge.svg)](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/build.yml) [![Lint](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/lint.yml/badge.svg)](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/lint.yml)
 
 [oasdiff](https://github.com/tufin/oasdiff) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -8,6 +8,8 @@
 
 # Contents
 
+- [asdf-oasdiff  ](#asdf-oasdiff--)
+- [Contents](#contents)
 - [Dependencies](#dependencies)
 - [Install](#install)
 - [Contributing](#contributing)
@@ -27,7 +29,7 @@ Plugin:
 ```shell
 asdf plugin add oasdiff
 # or
-asdf plugin add oasdiff https://github.com/reuvenharrison/asdf-oasdiff.git
+asdf plugin add oasdiff https://github.com/oasdiff/asdf-oasdiff.git
 ```
 
 oasdiff:
@@ -53,8 +55,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/reuvenharrison/asdf-oasdiff/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/oasdiff/asdf-oasdiff/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [Reuven](https://github.com/reuvenharrison/)
+See [LICENSE](LICENSE)
