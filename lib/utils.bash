@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-]GH_REPO="https://github.com/tufin/oasdiff"
+GH_REPO="https://github.com/Tufin/oasdiff"
 TOOL_NAME="oasdiff"
 TOOL_TEST="oasdiff --help"
 
@@ -36,15 +36,35 @@ list_all_versions() {
 }
 
 download_release() {
-	local version filename url
+	local version filename url platform
 	version="$1"
 	filename="$2"
+	platform=$(get_platform $version)
 
 	# TODO: Adapt the release URL convention for oasdiff
-	url="$GH_REPO/archive/v${version}.tar.gz"
+	url="$GH_REPO/releases/download/v${version}/${TOOL_NAME}_${version}_$platform.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
+}
+
+get_platform() {
+  local version=$1
+
+  case $(uname) in
+    #Linux OS
+    Linux)
+      if [ "$(uname -m)" = "aarch64" ]; then
+        echo "linux_arm64"
+      else
+        echo "linux_amd64"
+      fi
+    ;;
+    #Mac OS
+    Darwin)
+      echo "darwin_all"
+    ;;
+  esac
 }
 
 install_version() {
