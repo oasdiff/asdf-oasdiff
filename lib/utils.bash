@@ -39,7 +39,7 @@ download_release() {
 	local version filename url platform
 	version="$1"
 	filename="$2"
-	platform=$(get_platform)
+	platform=$(get_platform $version)
 
 	# TODO: Adapt the release URL convention for oasdiff
 	url="$GH_REPO/releases/download/v${version}/${TOOL_NAME}_${version}_$platform.tar.gz"
