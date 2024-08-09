@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-]GH_REPO="https://github.com/tufin/oasdiff"
+GH_REPO="https://github.com/tufin/oasdiff"
 TOOL_NAME="oasdiff"
 TOOL_TEST="oasdiff --help"
 
