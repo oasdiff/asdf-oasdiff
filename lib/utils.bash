@@ -55,9 +55,9 @@ get_platform() {
     #Linux OS
     Linux)
       if [ "$(uname -m)" = "aarch64" ]; then
-        echo "linux-arm64"
+        echo "linux_arm64"
       else
-        echo "linux-amd64"
+        echo "linux_amd64"
       fi
     ;;
     #Mac OS
