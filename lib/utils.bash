@@ -49,22 +49,22 @@ download_release() {
 }
 
 get_platform() {
-  local version=$1
+	local version=$1
 
-  case $(uname) in
-    #Linux OS
-    Linux)
-      if [ "$(uname -m)" = "aarch64" ]; then
-        echo "linux_arm64"
-      else
-        echo "linux_amd64"
-      fi
-    ;;
-    #Mac OS
-    Darwin)
-      echo "darwin_all"
-    ;;
-  esac
+	case $(uname) in
+	#Linux OS
+	Linux)
+		if [ "$(uname -m)" = "aarch64" ]; then
+			echo "linux_arm64"
+		else
+			echo "linux_amd64"
+		fi
+		;;
+	#Mac OS
+	Darwin)
+		echo "darwin_all"
+		;;
+	esac
 }
 
 install_version() {
