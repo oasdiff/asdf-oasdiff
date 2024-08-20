@@ -20,3 +20,8 @@ jobs:
         uses: asdf-vm/actions/plugin-test@v2
         with:
           command: oasdiff --help
+      - name: asdf_plugin_test_1_10_23
+        uses: asdf-vm/actions/plugin-test@v2
+        with:
+          command: oasdiff --version
+          version: 1.10.23
