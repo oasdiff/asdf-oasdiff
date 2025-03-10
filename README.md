@@ -2,7 +2,7 @@
 
 # asdf-oasdiff [![Build](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/build.yml/badge.svg)](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/build.yml) [![Lint](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/lint.yml/badge.svg)](https://github.com/oasdiff/asdf-oasdiff/actions/workflows/lint.yml)
 
-[oasdiff](https://github.com/tufin/oasdiff) plugin for the [asdf version manager](https://asdf-vm.com).
+[oasdiff](https://github.com/oasdiff/oasdiff) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
